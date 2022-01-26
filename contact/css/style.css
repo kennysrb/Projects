@@ -1,0 +1,458 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.3rem;
+    background: #eaeced;
+}
+
+li{
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+p{
+    font-weight: 200;
+}
+
+.btn {
+  display: inline-block;
+  background: #d1d633;
+  color: #333;
+  padding: 0.2rem 0.4rem;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+.btn:hover {
+  opacity: 0.8;
+}
+
+.container {
+  max-width: 1100px;  
+  margin: auto;
+  overflow: auto;
+  padding: 0 2rem;
+}
+
+/* NAVBAR */
+
+.navbar {
+  background-color: #333;
+  position: fixed;
+  width: 100%;
+  overflow: hidden;
+  z-index: 1;
+  opacity: 0.9;
+}
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  width: 69%;
+}
+
+.nav ul a {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.nav ul a:hover {
+  color: #00aeef;
+  transition: 0.5s;
+}
+
+/* SHOWCASE TITLE */
+
+
+.grid{
+  display: grid;
+  grid-template-columns: 10fr 7fr;
+  height: 100vh;
+}
+
+/* SHOWCASE-LEFT */
+
+.grid-1{
+  background-image: url(../img/map.JPG);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.grid-container {
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 5rem;
+
+}
+
+.grid-1-title, .grid-1-content {
+  color: #333;
+}
+
+.grid-1-title h1{
+  font-size: 3.8rem;
+  margin-top: 7rem;
+  font-weight: 900;
+}
+
+.grid-1-title p{
+  margin-bottom: 5rem;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #777;
+}
+
+.grid-1-content h3{
+  padding-bottom: 1.4rem;
+  font-weight: 800;
+}
+
+#kompas-bold{
+  font-weight: 900;
+}
+.grid-1-content li{
+  padding: 0.2rem;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #777;
+}
+
+.contact-social{
+  color: #777;
+}
+
+
+.contact-social{
+  padding-top: 1rem;
+  padding-left: 0.2rem;
+  display: flex;
+  justify-content: space-between;
+  width: 13%;  
+}
+
+.contact-social a{
+  font-size: 1.3rem;
+  color: #777;
+}
+
+
+.contact-social a:hover{
+  color: #00aeef;
+}
+
+
+/* SHOWCASE-RIGHT */
+
+
+.grid-2{
+  background-color: #59C7FC;
+  background-color: #444;
+  background-color: #15546b;
+  /* background-color: #1B77A1; */
+}
+
+.grid-2-title, .grid-2-content {
+  color: #fff;
+}
+
+.grid-2-content{
+  margin-left: 4rem;
+}
+
+.grid-2-content p{
+  font-size: 1rem;
+}
+
+.grid-2-title{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} 
+
+.icons{
+  display: flex;
+  justify-content: space-between;
+  width: 15%;
+  font-size: 2rem;
+  padding-bottom: 4rem;
+}
+
+.grid-2-title h1{
+  font-size: 3.8rem;
+  margin-top: 7rem;
+  font-weight: 900;
+  display: flex;
+  justify-content: space-around;
+}
+
+.fa-phone{
+  margin-bottom: 1.5rem;
+}
+
+.grid-2-title p{
+  padding-bottom: 1rem;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+#directories{
+  padding-left: 2rem;
+}
+
+#bold-font{
+  font-weight: 600;
+}
+
+.grid-2-content li{
+  padding: 0.2rem;
+  font-weight: 100;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.grid-2-content p{
+  margin-top: 1rem;
+  font-weight: 500;
+}
+
+.card-overlay-white {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    to top,
+    rgba(255,255,255,0),
+    rgba(255,255,255,1)40%); 
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  text-align: center;
+  margin-bottom: 3rem;
+  /* padding-bottom: 2rem; */
+}
+
+.title h1 {
+  color: #fff;
+  letter-spacing: 0.1rem;
+  font-size: 2.6rem;
+  font-weight: 800;
+  padding-bottom: 2rem;
+}
+
+.title h5{
+  color: #fff;
+  padding-bottom: 2rem;
+}
+
+
+
+
+
+/* FOOTER */
+
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+    
+}
+
+.copyright{
+    color: #fff;
+    font-size: 1rem;
+    text-align: center;
+}
+.terms{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+
+.terms a{
+    color: #fff;
+    font-weight: 300;
+    font-size: 1rem;
+    padding-top: 1rem;
+}
+
+.terms a:hover{
+  color: #00aeef;
+  transition: 0.5s;
+}
+
+.footer-container{
+    width: 86%;
+    margin: auto;
+}
+
+
+.footer{
+    background-color: #555;
+    color: #fff;
+}
+
+
+.fa-phone-alt{
+  font-size: 0.8rem;
+}
+
+
+
+/* proba footer */
+
+
+.footer-info{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 6rem;
+  font-size: 0.9rem;
+  width: 80%;
+  margin: auto;
+}
+
+.footer-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-card ul{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} 
+
+.footer-card ul li{
+  padding: 4px;
+}
+
+.footer-card h3{
+  padding-bottom: 1.8rem;
+}
+
+#email{
+  color: #00aeef;
+}
+
+.social{
+  display: flex;
+  justify-content: space-between;
+  width: 60%;  
+}
+
+.social a{
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.social a:hover{
+  color: #00aeef;
+}
+
+.footer-card ul li a{
+  color: #fff;
+}
+
+.footer-card ul li a:hover{
+  color: #00aeef;
+  font-size: 1.1rem;
+}
+
+.copyright{
+  padding-top: 2rem;
+}
+
+
+.boja{
+  background-color: #494949;
+  height: 13rem;
+  margin-bottom: 6rem;
+  padding-bottom: 8rem;
+  padding-top: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 700px) {
+  .card {
+    display: block;
+  }
+  
+}
+
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px)  { 
+      .container {
+          width: 64%;
+      }
+
+      
+      
+
+      .showcase {
+        height: 55vh;
+      }
+
+      .best-sellers{
+        grid-column: 1/4;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 1rem 0rem;
+      }     
+
+      .brochures a h3{
+        font-size: 1.2rem;
+        font-weight: 500;
+      }
+
+
+}
+
+/* MEDIA FOR SCREEN SMALLER THAN LAPTOP*/
+
+/* .nav{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+
+.nav ul{
+  width: 100%;
+} */
